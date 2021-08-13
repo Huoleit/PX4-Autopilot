@@ -2869,6 +2869,8 @@ Mavlink::start(int argc, char *argv[])
 void
 Mavlink::display_status()
 {
+	_receiver.enable_message_statistics();
+
 	if (_tstatus.heartbeat_type_gcs) {
 		printf("\tGCS heartbeat valid\n");
 	}
