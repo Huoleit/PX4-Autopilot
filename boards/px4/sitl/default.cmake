@@ -40,6 +40,7 @@ px4_add_board(
 		local_position_estimator
 		logger
 		mavlink
+		control_allocator
 		mc_att_control
 		mc_hover_thrust_estimator
 		mc_pos_control
@@ -114,5 +115,5 @@ if(REPLAY_FILE)
 	message(STATUS "Building without lockstep for replay")
 	set(ENABLE_LOCKSTEP_SCHEDULER no)
 else()
-	set(ENABLE_LOCKSTEP_SCHEDULER yes)
+	set(ENABLE_LOCKSTEP_SCHEDULER no)
 endif()

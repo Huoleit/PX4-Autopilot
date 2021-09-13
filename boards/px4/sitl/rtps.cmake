@@ -22,9 +22,11 @@ px4_add_board(
 	MODULES
 		airship_att_control
 		airspeed_selector
+		angular_velocity_controller
 		attitude_estimator_q
 		camera_feedback
 		commander
+		control_allocator
 		dataman
 		ekf2
 		events
@@ -112,5 +114,5 @@ if(REPLAY_FILE)
 	message(STATUS "Building without lockstep for replay")
 	set(ENABLE_LOCKSTEP_SCHEDULER no)
 else()
-	set(ENABLE_LOCKSTEP_SCHEDULER yes)
+	set(ENABLE_LOCKSTEP_SCHEDULER no)
 endif()

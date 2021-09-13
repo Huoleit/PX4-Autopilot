@@ -9,4 +9,35 @@
 
 . ${R}etc/init.d/rc.mc_defaults
 
-set MIXER quad_w
+param set-default CA_AIRFRAME 0
+param set-default CA_METHOD 0
+
+param set-default CA_ACT0_MAX 1100.0
+param set-default CA_ACT1_MAX 1100.0
+param set-default CA_ACT2_MAX 1100.0
+param set-default CA_ACT3_MAX 1100.0
+
+param set-default CA_MC_R0_PX 0.13
+param set-default CA_MC_R0_PY 0.22
+param set-default CA_MC_R0_CT 0.004665870979785017
+param set-default CA_MC_R0_KM 0.06
+
+param set-default CA_MC_R1_PX -0.13
+param set-default CA_MC_R1_PY -0.2
+param set-default CA_MC_R1_CT 0.004665870979785017
+param set-default CA_MC_R1_KM 0.06
+
+param set-default CA_MC_R2_PX 0.13
+param set-default CA_MC_R2_PY -0.22
+param set-default CA_MC_R2_CT 0.004665870979785017
+param set-default CA_MC_R2_KM -0.06
+
+param set-default CA_MC_R3_PX -0.13
+param set-default CA_MC_R3_PY 0.2
+param set-default CA_MC_R3_CT 0.004665870979785017
+param set-default CA_MC_R3_KM -0.06
+
+param set-default COM_DISARM_PRFLT 0
+
+
+set MIXER direct

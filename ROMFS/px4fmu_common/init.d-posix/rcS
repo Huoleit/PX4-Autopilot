@@ -258,6 +258,7 @@ fi
 #
 . ${R}etc/init.d/rc.vehicle_setup
 
+. ${R}etc/init.d/rc.ctrlalloc
 #user defined mavlink streams for instances can be in PATH
 . px4-rc.mavlink
 
